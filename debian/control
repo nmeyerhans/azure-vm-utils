@@ -1,0 +1,18 @@
+Source: azure-nvme-utils
+Section: admin
+Priority: optional
+Maintainer: Debian Cloud Team <debian-cloud@lists.debian.org>
+Build-Depends: cmake, debhelper-compat (= 13), pkgconf
+Standards-Version: 4.5.0
+Homepage: https://github.com/Azure/azure-nvme-utils
+Rules-Requires-Root: no
+Vcs-Browser: https://salsa.debian.org/cloud-team/azure-nvme-utils
+Vcs-Git: https://salsa.debian.org/cloud-team/azure-nvme-utils.git
+
+Package: azure-nvme-utils
+Architecture: any
+Multi-Arch: foreign
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Utilities to assist managing NVMe devices on Azure
+ This package provides azure-nvme-id for NVMe device identification and udev
+ rules to provide symlinks using available identifiers.
