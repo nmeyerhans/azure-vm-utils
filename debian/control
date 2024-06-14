@@ -5,7 +5,7 @@ Maintainer: Debian Cloud Team <debian-cloud@lists.debian.org>
 Uploaders: Noah Meyerhans <noahm@debian.org>,
  Chris Patterson <cpatterson@microsoft.com>
 Build-Depends: cmake, debhelper-compat (= 13), pkgconf
-Standards-Version: 4.5.0
+Standards-Version: 4.7.0
 Homepage: https://github.com/Azure/azure-nvme-utils
 Rules-Requires-Root: no
 Vcs-Browser: https://salsa.debian.org/cloud-team/azure-nvme-utils
