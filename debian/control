@@ -2,6 +2,8 @@ Source: azure-nvme-utils
 Section: admin
 Priority: optional
 Maintainer: Debian Cloud Team <debian-cloud@lists.debian.org>
+Uploaders: Noah Meyerhans <noahm@debian.org>,
+ Chris Patterson <cpatterson@microsoft.com>
 Build-Depends: cmake, debhelper-compat (= 13), pkgconf
 Standards-Version: 4.5.0
 Homepage: https://github.com/Azure/azure-nvme-utils
