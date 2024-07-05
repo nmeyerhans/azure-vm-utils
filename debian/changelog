@@ -1,3 +1,9 @@
+azure-nvme-utils (0.2.0-2) unstable; urgency=medium
+
+  * Bump package version for source-only upload
+
+ -- Noah Meyerhans <noahm@debian.org>  Fri, 05 Jul 2024 14:49:25 -0700
+
 azure-nvme-utils (0.2.0-1) unstable; urgency=medium
 
   * Initial release (Closes: #1072523)
