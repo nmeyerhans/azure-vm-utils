@@ -1,10 +1,10 @@
-Index: azure-nvme-utils/doc/azure-nvme-id.8
-===================================================================
---- azure-nvme-utils.orig/doc/azure-nvme-id.8
-+++ azure-nvme-utils/doc/azure-nvme-id.8
+diff --git a/debian/patches/fix-nonreproducible-manpage.patch b/debian/patches/fix-nonreproducible-manpage.patch
+index 2105584..6257a50 100644
+--- a/doc/azure-nvme-id.8
++++ b/doc/azure-nvme-id.8
 @@ -1,4 +1,4 @@
 -.TH "azure\-nvme\-id" "1" "@TODAY@" "azure-nvme-id\ @VERSION@" "User Manual"
-+.TH "azure\-nvme\-id" "1" "June 11, 2024" "azure-nvme-id\ @VERSION@" "User Manual"
++.TH "azure\-nvme\-id" "1" "September 12, 2024" "azure-nvme-id\ @VERSION@" "User Manual"
  .SH NAME
  azure\-nvme\-id \- Identify Azure NVMe devices.
  .SH SYNOPSIS

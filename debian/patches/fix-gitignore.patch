@@ -1,12 +1,11 @@
-Index: azure-nvme-utils/.gitignore
-===================================================================
---- azure-nvme-utils.orig/.gitignore
-+++ azure-nvme-utils/.gitignore
-@@ -74,7 +74,6 @@ _deps
+diff --git a/.gitignore b/.gitignore
+index 1849db1..6ad8b37 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -71,6 +71,5 @@ _deps
  azure-nvme-id
  obj-*
  /build/
 -/debian/
- /doc/azure-nvme-id.1
  /src/version.h
- /udev/80-azure-nvme.rules
+ /out/
