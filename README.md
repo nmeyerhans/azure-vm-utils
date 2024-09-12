@@ -1,6 +1,6 @@
-# Project
+# azure-vm-utils
 
-This project includes a utility to help identify Azure NVMe devices.
+A collection of utilities and udev rules to make the most of the Linux experience on Azure.
 
 ## Quick Start
 
@@ -11,11 +11,17 @@ cmake .
 make
 ```
 
-To install /usr/local/bin/azure-nvme-id and /usr/local/lib/udev/rules.d/80-azure-nvme.rules:
+To install:
 
 ```
 sudo make install
 ```
+
+# Executables
+
+## azure-nvme-id
+
+`azure-nvme-id` is a utility to help identify Azure NVMe devices.
 
 To run:
 
@@ -29,27 +35,13 @@ To run in udev mode:
 DEVNAME=/dev/nvme0n1 azure-nvme-id --udev
 ```
 
-### Enabling LUN Calculation by Namespace Identifier (Default)
+# Rules for udev
 
-The "LUN" configured by the user for data disks can be computed by the namespace identifier for "MSFT NVMe Accelerator v1.0" controllers.
+## 80-azure-disk.rules
 
-This is currently enabled by default to support cases where there is no identification information available in the vendor-specific field of Identify Namespace data structure.
+Provides helpful symlinks in /dev/disk/azure for local, data, and os disks.
 
-It can be explicitly enabled by passing AZURE_LUN_CALCULATION_BY_NSID_ENABLED=1 to cmake:
-
-```
-cmake -DAZURE_LUN_CALCULATION_BY_NSID_ENABLED=1 .
-```
-
-## Disabling LUN Calculation by Namespace Identifier
-
-Pass AZURE_LUN_CALCULATION_BY_NSID_ENABLED=0 to cmake:
-
-```
-cmake -DAZURE_LUN_CALCULATION_BY_NSID_ENABLED=0 .
-```
-
-## Contributing
+# Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
 Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
