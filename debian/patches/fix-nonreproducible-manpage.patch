@@ -1,7 +1,7 @@
-Index: azure-nvme-utils/doc/azure-nvme-id.1
+Index: azure-nvme-utils/doc/azure-nvme-id.8
 ===================================================================
---- azure-nvme-utils.orig/doc/azure-nvme-id.1
-+++ azure-nvme-utils/doc/azure-nvme-id.1
+--- azure-nvme-utils.orig/doc/azure-nvme-id.8
++++ azure-nvme-utils/doc/azure-nvme-id.8
 @@ -1,4 +1,4 @@
 -.TH "azure\-nvme\-id" "1" "@TODAY@" "azure-nvme-id\ @VERSION@" "User Manual"
 +.TH "azure\-nvme\-id" "1" "June 11, 2024" "azure-nvme-id\ @VERSION@" "User Manual"

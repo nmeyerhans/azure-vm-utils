@@ -1,2 +1,2 @@
 version=4
-https://github.com/Azure/azure-nvme-utils/tags .*/v?(\d.*)@ARCHIVE_EXT@
+https://github.com/Azure/azure-vm-utils/tags .*/v?(\d.*)@ARCHIVE_EXT@

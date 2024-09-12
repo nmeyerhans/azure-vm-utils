@@ -1,4 +1,4 @@
-Source: azure-nvme-utils
+Source: azure-vm-utils
 Section: admin
 Priority: optional
 Maintainer: Debian Cloud Team <debian-cloud@lists.debian.org>
@@ -6,15 +6,24 @@ Uploaders: Noah Meyerhans <noahm@debian.org>,
  Chris Patterson <cpatterson@microsoft.com>
 Build-Depends: cmake, debhelper-compat (= 13), pkgconf
 Standards-Version: 4.7.0
-Homepage: https://github.com/Azure/azure-nvme-utils
+Homepage: https://github.com/Azure/azure-vm-utils
 Rules-Requires-Root: no
-Vcs-Browser: https://salsa.debian.org/cloud-team/azure-nvme-utils
-Vcs-Git: https://salsa.debian.org/cloud-team/azure-nvme-utils.git
+Vcs-Browser: https://salsa.debian.org/cloud-team/azure-vm-utils
+Vcs-Git: https://salsa.debian.org/cloud-team/azure-vm-utils.git
 
-Package: azure-nvme-utils
+Package: azure-vm-utils
 Architecture: any
 Multi-Arch: foreign
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Description: Utilities to assist managing NVMe devices on Azure
- This package provides azure-nvme-id for NVMe device identification and udev
- rules to provide symlinks using available identifiers.
+Description: Core utilities and configuration for Linux VMs on Azure
+ This package provides a home for core utilities, udev rules and other
+ configuration to support Linux VMs on Azure.
+Replaces: azure-nvme-utils (<< 0.3.0-1~)
+Conflicts: azure-nvme-utils (<< 0.3.0-1~)
+Provides: azure-nvme-utils
+
+Package: azure-nvme-utils
+Depends: azure-vm-utils
+Architecture: any
+Description: transitional package
+  This is a transitional package. It can safely be removed.
