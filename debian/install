@@ -1,4 +1,4 @@
+initramfs/initramfs-tools/hooks/azure-disk usr/share/initramfs-tools/hooks/
 usr/lib/udev/rules.d/80-azure-disk.rules usr/lib/udev/rules.d/
 usr/sbin/azure-nvme-id usr/sbin/
-usr/share/initramfs-tools/hooks/azure-disk usr/share/initramfs-tools/hooks/
 usr/share/man/man8/azure-nvme-id.8 usr/share/man/man8/
