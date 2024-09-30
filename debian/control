@@ -21,9 +21,3 @@ Description: Core utilities and configuration for Linux VMs on Azure
 Replaces: azure-nvme-utils (<< 0.3.0-1~)
 Conflicts: azure-nvme-utils (<< 0.3.0-1~)
 Provides: azure-nvme-utils
-
-Package: azure-nvme-utils
-Depends: azure-vm-utils
-Architecture: any
-Description: transitional package
-  This is a transitional package. It can safely be removed.
