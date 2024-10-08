@@ -1,0 +1,10 @@
+diff --git a/cmake/doc.cmake b/cmake/doc.cmake
+index 611bfc5..a055109 100644
+--- a/cmake/doc.cmake
++++ b/cmake/doc.cmake
+@@ -1,4 +1,4 @@
+-string(TIMESTAMP TODAY "%B %d, %Y")
++string(TIMESTAMP TODAY "October 8, 2024")
+ 
+ option(GENERATE_MANPAGES "Generate manpages with pandoc" OFF)
+ if(GENERATE_MANPAGES)
