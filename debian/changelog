@@ -1,9 +1,9 @@
-azure-vm-utils (0.4.0-1) UNRELEASED; urgency=medium
+azure-vm-utils (0.4.0-1) unstable; urgency=medium
 
   * Rename to azure-vm-utils to match renamed upstream project
   * New upstream version 0.4.0
 
- -- Chris Patterson <cpatterson@microsoft.com>  Thu, 12 Sep 2024 22:08:29 +0000
+ -- Noah Meyerhans <noahm@debian.org>  Wed, 09 Oct 2024 09:13:04 -0400
 
 azure-nvme-utils (0.2.0-2) unstable; urgency=medium
 
