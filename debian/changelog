@@ -1,3 +1,10 @@
+azure-vm-utils (0.4.0-2) unstable; urgency=medium
+
+  [ Chris Patterson ]
+  * Fix for reproducible manpage.
+
+ -- Noah Meyerhans <noahm@debian.org>  Mon, 14 Oct 2024 09:25:39 -0400
+
 azure-vm-utils (0.4.0-1) unstable; urgency=medium
 
   * Rename to azure-vm-utils to match renamed upstream project
