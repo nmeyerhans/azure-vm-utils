@@ -1,0 +1,3 @@
+Test-Command: python3 ./selftest/selftest.py --skip-imds-validation --skip-symlink-validation
+Depends: azure-vm-utils, python3
+Restrictions: allow-stderr, needs-root

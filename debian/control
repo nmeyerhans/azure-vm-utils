@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Debian Cloud Team <debian-cloud@lists.debian.org>
 Uploaders: Noah Meyerhans <noahm@debian.org>,
  Chris Patterson <cpatterson@microsoft.com>
-Build-Depends: cmake, debhelper-compat (= 13), pkgconf
+Build-Depends: cmake, debhelper-compat (= 13), pkgconf, libcmocka-dev, libjson-c-dev, python3
 Standards-Version: 4.7.0
 Homepage: https://github.com/Azure/azure-vm-utils
 Rules-Requires-Root: no

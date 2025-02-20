@@ -7,5 +7,10 @@ version=$(shell dpkg-parsechangelog --show-field version)
 override_dh_auto_configure:
 	dh_auto_configure -- -DVERSION=$(version)
 
+override_dh_install:
+	dh_auto_install
+	rm debian/azure-vm-utils/usr/sbin/azure-vm-utils-selftest
+	rm debian/azure-vm-utils/usr/share/man/man8/azure-vm-utils-selftest.8
+
 %:
 	dh $@
