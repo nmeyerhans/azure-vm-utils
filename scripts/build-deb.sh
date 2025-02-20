@@ -2,6 +2,21 @@
 
 set -eux -o pipefail
 
+# Ensure dependencies are installed and up-to-date.
+sudo apt update
+sudo apt install -y \
+        build-essential \
+        clang-format \
+        cmake \
+        cppcheck \
+        devscripts \
+        debhelper \
+        gcc \
+        libcmocka-dev \
+        libjson-c-dev \
+        pandoc \
+        pkg-config
+
 project_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 git_version="$(git describe --tags --always --dirty)"
 git_ref="$(echo "${git_version}" | sed 's/.*-g//' | sed 's/-dirty/DIRTY/')"

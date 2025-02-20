@@ -29,7 +29,13 @@ git archive --verbose --format=tar.gz --prefix="azure-vm-utils-${version}/" HEAD
 cd "${project_dir}/packaging/${distro}"
 
 # Install dependencies.
-sudo dnf builddep -y --spec azure-vm-utils.spec
+build_requirements=$(grep ^BuildRequires azure-vm-utils.spec | awk '{{print $2}}' | tr '\n' ' ')
+install_build_requirements_cmd="dnf install -y ${build_requirements} rpm-build dracut"
+if [[ $UID -ne 0 ]]; then
+    sudo $install_build_requirements_cmd
+else
+    $install_build_requirements_cmd
+fi
 
 # Build RPM.
 rpmbuild -ba --define "__git_version ${version}" --define "__git_release ${release}" --define "_topdir ${build_dir}" azure-vm-utils.spec
@@ -37,4 +43,4 @@ rpmbuild -ba --define "__git_version ${version}" --define "__git_release ${relea
 # Copy RPM to output directory.
 mkdir -p "${output_dir}"
 rm -f "${output_dir}"/*.rpm
-cp -v "${build_dir}"/RPMS/*/"azure-vm-utils-${version}-${release}".*.rpm "${output_dir}"
+cp -v "${build_dir}"/RPMS/*/azure-vm-utils*"${version}-${release}"*.rpm "${output_dir}"
