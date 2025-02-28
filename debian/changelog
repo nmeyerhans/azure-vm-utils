@@ -1,3 +1,9 @@
+azure-vm-utils (0.5.1-1) unstable; urgency=medium
+
+  * New upstream version 0.5.1
+
+ -- Chris Patterson <cpatterson@microsoft.com>  Fri, 28 Feb 2025 18:26:08 +0000
+
 azure-vm-utils (0.5.0-1) unstable; urgency=medium
 
   * New upstream version 0.5.0
