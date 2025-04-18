@@ -1,1 +1,2 @@
 initramfs/initramfs-tools/hooks/azure-disk usr/share/initramfs-tools/hooks/
+initramfs/initramfs-tools/hooks/azure-unmanaged-sriov usr/share/initramfs-tools/hooks/

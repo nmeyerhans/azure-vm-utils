@@ -1,3 +1,10 @@
+azure-vm-utils (0.6.0-2) unstable; urgency=medium
+
+  * Fix missing dh_install
+  * Add missing azure-unmanaged-sriov hook install
+
+ -- Chris Patterson <cpatterson@microsoft.com>  Fri, 18 Apr 2025 10:50:21 -0400
+
 azure-vm-utils (0.6.0-1) unstable; urgency=medium
 
   * New upstream version 0.6.0

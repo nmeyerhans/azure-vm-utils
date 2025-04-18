@@ -9,6 +9,7 @@ override_dh_auto_configure:
 
 override_dh_install:
 	dh_auto_install
+	dh_install
 	rm debian/azure-vm-utils/usr/sbin/azure-vm-utils-selftest
 	rm debian/azure-vm-utils/usr/share/man/man8/azure-vm-utils-selftest.8
 
