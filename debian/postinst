@@ -1,0 +1,17 @@
+#!/usr/bin/bash
+
+set -e
+
+# we introduce a grub configuration fragment with 0.6.0-3, so on new
+# installs or upgrades from prior versions we need to trigger a grub
+# configuration update
+if [ "$1" = "configure" ]; then
+    if [ -z "$2" ] ||
+           dpkg --compare-versions "$2" le 0.6.0-2; then
+	if command -v update-grub > /dev/null 2>&1; then
+            update-grub
+	fi
+    fi
+fi
+
+#DEBHELPER#

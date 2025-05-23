@@ -1,2 +1,3 @@
 initramfs/initramfs-tools/hooks/azure-disk usr/share/initramfs-tools/hooks/
 initramfs/initramfs-tools/hooks/azure-unmanaged-sriov usr/share/initramfs-tools/hooks/
+debian/20_nvme-timeouts.cfg etc/default/grub.d/
