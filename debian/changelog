@@ -1,3 +1,9 @@
+azure-vm-utils (0.6.0-3) unstable; urgency=medium
+
+  * Set nvme parameters per Microsoft recommendations (Closes: #1106378)
+
+ -- Noah Meyerhans <noahm@debian.org>  Fri, 23 May 2025 12:49:19 -0400
+
 azure-vm-utils (0.6.0-2) unstable; urgency=medium
 
   * Fix missing dh_install
